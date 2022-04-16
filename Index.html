@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pump House</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /*CSS Reset*/
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("Image/pexels-victor-freitas-841130.jpg");
+             background-size: cover;
+            
+        }
+        .left{
+            display: inline-block;
+            border: 2px solid red;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+
+        }
+        .mid{
+            display: block;
+            width: 53%;
+            margin: 20px auto;
+            border: 2px solid green;
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            border: 2px solid yellow;
+             
+        }
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li {
+        display: inline-block;
+        font-size: 25px;
+         }
+
+        .navbar li a{
+            color: aliceblue;
+            text-decoration:  none;
+            padding: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- This is for Loga -->
+        <div class ="left">
+            This is left
+        </div>
+        <!-- This is for navbar -->
+        <div class="mid">
+            <ul class = navbar>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness calculator</a></li>
+                <li><a href="">Contact us</a></li>
+            
+            </ul>
+
+        </div>
+        <!-- This is for button -->
+        <div class="right">
+            This is right
+
+        </div> 
+    </header>
+</body>
+</html>
