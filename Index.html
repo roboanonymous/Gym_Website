@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pump House</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style>
 
         /*CSS Reset*/
@@ -19,7 +21,7 @@
         }
         .left{
             display: inline-block;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             position: absolute;
             left: 34px;
             top: 20px;
@@ -37,19 +39,18 @@
         text-align: center;
          }
 
-
         .mid{
             display: block;
             width: 53%;
             margin: 20px auto;
-            border: 2px solid green;
+            /* border: 2px solid green; */
         }
         .right{
             position: absolute;
             right: 34px;
             top: 20px;
             display: inline-block;
-            border: 2px solid yellow;
+            /* border: 2px solid yellow; */
              
         }
         .navbar{
@@ -72,16 +73,66 @@
         .navbar li a.active {
           text-decoration: underline;
           color: grey;
+        }
+
+        .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 200px;
+        width: 40%;
+        padding: 100px;
+        border-radius: 10px;
+    }
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-family: 'Baloo Bhai', cursive; 
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+
 
     </style>
 </head>
 <body>
     <header>
+
+    
         <!-- This is for Logo -->
         <div class ="left">
             <img src="/Image/Fitness-Gym-logo-design-template-on-transparent-background-PNG.png" alt="logo">
             <div>Pump House</div>
         </div>
+
+
         <!-- This is for navbar -->
         <div class="mid">
             <ul class = navbar>
@@ -91,13 +142,39 @@
                 <li><a href="">Contact us</a></li>
             
             </ul>
-
         </div>
+
+
         <!-- This is for button -->
         <div class="right">
-            This is right
-
+            <button class="button"> Call us now</button>
+            <button class="button"> Email us</button>
         </div> 
     </header>
+
+    <div class="container"> 
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
